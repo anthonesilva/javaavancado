@@ -9,5 +9,14 @@
 <body>
 	<h1>Bem vindo ao curso de JSP!</h1>
 	<% out.print("Hello world!"); %>
+	
+	
+	<!-- Testando a passagem de parâmetros, enviando para a página receber-param.jsp -->
+	
+	<form action="receber-param.jsp">
+		<input type="text" id="nome" name="nome">
+		<input type="submit" value="Enviar">
+	</form>
+	
 </body>
 </html>
