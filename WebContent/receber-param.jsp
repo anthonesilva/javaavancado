@@ -23,7 +23,9 @@
 
 	<!-- Da mesma forma posso usar a tag expressão para receber parâmetros -->
 	<br />
-	<%="Nome recebido pela tag expressão: " + request.getParameter("nome")%>
+	<%="Nome recebido pela tag expressão: " + request.getParameter("nome") %>
+	
+	<!-- Exemplo de objeto implícito response.sendRedirect("http://www.google.com") -->
 
 </body>
 </html>
