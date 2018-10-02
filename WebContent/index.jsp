@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,15 +8,21 @@
 </head>
 <body>
 	<h1>Bem vindo ao curso de JSP!</h1>
-	<% out.print("Hello world!"); %>
-	
-	
+	<%
+		out.print("Hello world!");
+	%>
+
+
 	<!-- Testando a passagem de parâmetros, enviando para a página receber-param.jsp -->
-	
+
 	<form action="receber-param.jsp">
-		<input type="text" id="nome" name="nome">
-		<input type="submit" value="Enviar">
+		<input type="text" id="nome" name="nome"> <input type="submit"
+			value="Enviar">
 	</form>
-	
+
+	<!-- Substituindo o out.print pela tag expressão -->
+
+	<%="Hello world com a tag expressão!"%>
+
 </body>
 </html>
